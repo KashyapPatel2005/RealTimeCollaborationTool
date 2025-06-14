@@ -114,7 +114,7 @@ function EditorPage() {
   const runCode = async () => {
     setIsCompiling(true);
     try {
-      const response = await axios.post("http://localhost:5000/compile", {
+      const response = await axios.post("https://realtimecollaborationtool-8.onrender.com", {
         code: codeRef.current,
         language: selectedLanguage,
       });
